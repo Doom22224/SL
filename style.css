@@ -1,10 +1,113 @@
+.block1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background: #252849 linear-gradient(0deg, #fff 103px, #2661fe 0, #252849);
+}
+
 .block1__info {
-  height: 1000px;
-  background: linear-gradient(2.86deg, #2661FE 9.58%, rgba(38, 97, 254, 0) 88.8%);
+  padding-top: 150px;
+}
+
+.block1__text {
+  max-width: 540px;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  padding-bottom: 180px;
+}
+
+.block1__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+}
+
+.block1__nav-list {
+  text-decoration: none;
+  color: #fff;
+  padding: 40px 50px 30px;
+  background: #2661FE;
+  border: 7px solid #2661FE;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.block1__nav-list:hover {
+  background: #fff;
+  color: #2661FE;
+}
+
+.block1__nav-head {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.15px;
+}
+
+.block1__nav-info {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  max-width: 290px;
+  margin-bottom: 50px;
+  color: #2661FE;
+}
+
+.block1__nav-line {
+  position: relative;
+  bottom: 0;
+  width: 74px;
+  margin-top: auto;
+}
+
+.block1__nav-line:hover {
+  left: calc(100% - 76px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   padding: 14px;
   max-width: 1920px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  max-width: 590px;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 80px;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */

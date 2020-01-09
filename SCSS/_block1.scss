@@ -1,9 +1,78 @@
 .block1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background: #252849 linear-gradient(0deg,#fff 103px,#2661fe 0,#252849);
+
 
   &__info {
-    height: 1000px;
-    background: linear-gradient(2.86deg, #2661FE 9.58%, rgba(38, 97, 254, 0) 88.8%);
+    padding-top: 150px;
 
   }
   
+  &__text {
+    max-width: 540px;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    padding-bottom: 180px;
+    
+  }
+
+  &__nav {
+    display: flex;
+    margin-left: 20px;
+
+  }
+
+  &__nav-list {
+    text-decoration: none;
+    color: #fff;
+    padding: 40px 50px 30px;
+    background: #2661FE;
+    border: 7px solid #2661FE;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-right:20px ;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    &:hover {
+      background: #fff;
+      color:#2661FE;
+    }
+  }
+
+  &__nav-head {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.15px;
+  }
+
+  &__nav-info {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    max-width: 290px;
+    margin-bottom: 50px;
+    color: #2661FE;
+
+  }
+
+  &__nav-line {
+    position: relative;
+    bottom: 0;
+    width:74px;
+    margin-top: auto;
+
+    &:hover {
+      left: calc(100% - 76px);
+    }
+  }
+
 }
