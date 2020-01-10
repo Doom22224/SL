@@ -40,8 +40,10 @@
     flex-grow: 1;
 
     &:hover {
-      background: #fff;
+      background: #F9F9FA;
       color:#2661FE;
+      border:7px solid #F9F9FA;
+      transition: .20\s ease;
     }
   }
 
@@ -59,20 +61,24 @@
     line-height: 20px;
     letter-spacing: 0.1px;
     max-width: 290px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: #2661FE;
 
   }
 
-  &__nav-line {
+  &__nav-lineColor {
+    overflow: visible;
     position: relative;
-    bottom: 0;
-    width:74px;
     margin-top: auto;
+    left: 0;
+    transition: left .4s ease;
 
-    &:hover {
-      left: calc(100% - 76px);
-    }
+    
   }
+
+  &__nav-list:hover &__nav-lineColor{
+      left: calc(100% - 76px);
+      
+    }
 
 }

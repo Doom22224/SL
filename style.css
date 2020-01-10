@@ -55,8 +55,11 @@
 }
 
 .block1__nav-list:hover {
-  background: #fff;
+  background: #F9F9FA;
   color: #2661FE;
+  border: 7px solid #F9F9FA;
+  -webkit-transition: .20\s ease;
+  transition: .20\s ease;
 }
 
 .block1__nav-head {
@@ -73,18 +76,20 @@
   line-height: 20px;
   letter-spacing: 0.1px;
   max-width: 290px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   color: #2661FE;
 }
 
-.block1__nav-line {
+.block1__nav-lineColor {
+  overflow: visible;
   position: relative;
-  bottom: 0;
-  width: 74px;
   margin-top: auto;
+  left: 0;
+  -webkit-transition: left .4s ease;
+  transition: left .4s ease;
 }
 
-.block1__nav-line:hover {
+.block1__nav-list:hover .block1__nav-lineColor {
   left: calc(100% - 76px);
 }
 
